@@ -7,11 +7,11 @@
 <body>
     <?php include 'nav.html';?>
     <div class="container pt-5">
-        <h1>Convertisseur de nombres romains en nombres arabes</h1>
         <div class="mb-3 p-5 bg-light">
             <form action="" method="post">
-                Entrez un nombre romain : <input type="text" name="romanNumber">
-                <input type="submit" value="Convertir">
+                <label class="form-label">Entrez un nombre romain</label>
+                <input type="text" class="form-control" name="romanNumber">
+                <input type="submit" class="mt-3 btn btn-primary" value="Convertir">
             </form>
         <div>
     <div>
