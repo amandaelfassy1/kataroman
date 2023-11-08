@@ -7,11 +7,13 @@
 <body>
     <?php include 'nav.html';?>
     <div class="container pt-5">
-    <h1>Convertisseur de nombres romains en nombres arabes</h1>
-    <form action="" method="post">
-        Entrez un nombre romain : <input type="text" name="romanNumber">
-        <input type="submit" value="Convertir">
-    </form>
+        <h1>Convertisseur de nombres romains en nombres arabes</h1>
+        <div class="mb-3 p-5 bg-light">
+            <form action="" method="post">
+                Entrez un nombre romain : <input type="text" name="romanNumber">
+                <input type="submit" value="Convertir">
+            </form>
+        <div>
     <div>
     <?php
     function romanToArabic($romanNumber) {
@@ -57,7 +59,7 @@
         if ($arabicNumber === false) {
             echo "Erreur : La saisie n'est pas un nombre romain valide.";
         } else {
-            echo '<div class="container pt-5">Le nombre romain <b>' .$romanNumber.' </b> correspond au nombre arabe <b>$arabicNumber</b>.';
+            echo '<div class="container pt-5">Le nombre romain <b>' .$romanNumber.' </b> correspond au nombre arabe <b>'.$arabicNumber.'</b>.';
         }
     }
     ?>
