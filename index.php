@@ -27,6 +27,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <title>Convertisseur de nombres romains</title>
 </head>
 <body>
+<?php include 'nav.html';?>
     <div class="container pt-5">
         <form method="POST">
             <div class="mb-3 p-5 bg-light">
